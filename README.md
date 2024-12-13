@@ -1,5 +1,6 @@
 # DSUA-301-Final Project-Moodify
-A real-time emotion detection and music recommendation system.
+Most music recommendation systems today rely heavily on user history or listening habits, lacking real-time interaction based on users' current mood or context. 
+This project combines real-time emotion detection with music recommendation to create a personalized and context-aware user experience.
 We trained emotion detection models on the FER2013 dataset with finetuned  CNN, VGG16, ResNet and paired them with a music recommendation model based on CNN and RNN-attention architectures.
 The system can predict emotions like angry, sad, happy, surprise, and fear, then recommend 10 songs tailored to the detected emotion.
 
