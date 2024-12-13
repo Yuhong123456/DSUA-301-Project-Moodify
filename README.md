@@ -28,7 +28,9 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 #### Expected output
 with taking a selfie like this
 ![input_example](./image/input_example.png)
+
  You can get a picture with emotional label and confidence and the 10 songs recomended to you.
+ 
 ![output_example](./image/output_example.png)
 
 
