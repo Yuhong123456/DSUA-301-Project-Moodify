@@ -44,8 +44,15 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 | **Weighted Avg** | Precision: 0.69, Recall: 0.69, F1-Score: 0.68 |
 
  
- ![confunsion matrix for CNN](./image/CNN_confusion_matrix.png)
+ ![confunsion matrix for CNN_Emotion_Model](./image/CNN_confusion_matrix.png)
 
+
+
+ 
+
+
+ ### 2.Music Recommendation
+We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
  ## Report for CNN
 
 | Metric          | Precision | Recall | F1-Score | Support |
@@ -54,14 +61,11 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 | **Macro Avg**    | 0.79      | 0.77   | 0.77     | 8222    |
 | **Weighted Avg** | 0.83      | 0.82   | 0.82     | 8222    |
 
+ ![confunsion matrix for CNN_Music_Model](./image/music_model_confusionmatrix.png)
 
- 
-
-
- ### 2.Music Recommendation
- Music recomendation 
-
- ![]
+ | Image 1        | Image 2        |
+|----------------|----------------|
+| ![ROC_curve_for_RNN_with_attention](./image/ROC_curve_for_RNN_with_attention.png) | ![PR_curve_for_RNN_with_attention](./image/PR_curve_for_RNN_with_attention.png) |
 
 
  ## Future Work
