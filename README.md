@@ -26,10 +26,9 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 ### 3. Visualize Results 
 
 #### Expected output
-with taking a selfie like this
-![input_example](./image/input_example.png)
+with taking a picture of a face,
 
- You can get a picture with emotional label and confidence and the 10 songs recomended to you.
+then you can get a picture with emotional label and confidence and the 10 songs recomended to you.
  
 ![output_example](./image/output_example.png)
 
