@@ -45,10 +45,23 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 
  
  ![confunsion matrix for CNN](./image/CNN_confusion_matrix.png)
+
+ ## Report for CNN
+
+| Metric          | Precision | Recall | F1-Score | Support |
+|------------------|-----------|--------|----------|---------|
+| **Accuracy**     |           |        | 0.82     | 8222    |
+| **Macro Avg**    | 0.79      | 0.77   | 0.77     | 8222    |
+| **Weighted Avg** | 0.83      | 0.82   | 0.82     | 8222    |
+
+
  
 
 
  ### 2.Music Recommendation
+ Music recomendation 
+
+ ![]
 
 
  ## Future Work
