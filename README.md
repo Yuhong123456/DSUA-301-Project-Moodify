@@ -6,19 +6,15 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
  ## Environment setup
  ### requirements
  - Python >= 3.8
- - Key libraries:
-tensorflow
-keras
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-opencv-python 
+ - Install dependencies with pip:
+   
+ `pip install -r requirements.txt`
+
  
- ### Dataset Setup
+ ### dataset setup
  Download the dataset from [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
- Another dataset is customed [music_moods_dataset.csv]()
+ 
+ Another dataset is customed [music_moods_dataset.csv](./music_moods_dataset.csv)
  
 
 
@@ -26,6 +22,12 @@ opencv-python
 
 
  ## Results
+ ### Emotion Detection
+
+ ### Music Recommendation
+
+
+ ## Future Work
 
 
  ## Contributors
