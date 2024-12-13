@@ -4,14 +4,14 @@ We trained emotion detection models on the FER2013 dataset with finetuned  CNN, 
 The system can predict emotions like angry, sad, happy, surprise, and fear, then recommend 10 songs tailored to the detected emotion.
 
  ## Environment setup
- ### requirements
+ ### 1.requirements
  - Python >= 3.8
  - Install dependencies with pip:
    
  `pip install -r requirements.txt`
 
  
- ### dataset setup
+ ### 2.dataset setup
  Download the dataset from [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
  
  Another dataset is customed [music_moods_dataset.csv](./music_moods_dataset.csv)
@@ -22,9 +22,9 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 
 
  ## Results
- ### Emotion Detection
+ ### 1.Emotion Detection
 
- ### Music Recommendation
+ ### 2.Music Recommendation
 
 
  ## Future Work
