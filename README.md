@@ -63,7 +63,7 @@ We initially implemented a CNN model for the music-emotion learning task and lat
 
  ![confunsion matrix for CNN_Music_Model](./image/music_model_confusionmatrix.png)
 
- | Image 1        | Image 2        |
+ | ROC_curve_for_RNN_with_attention        | PR_curve_for_RNN_with_attention       |
 |----------------|----------------|
 | ![ROC_curve_for_RNN_with_attention](./image/ROC_curve_for_RNN_with_attention.png) | ![PR_curve_for_RNN_with_attention](./image/PR_curve_for_RNN_with_attention.png) |
 
