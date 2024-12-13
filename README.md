@@ -1,32 +1,43 @@
 # DSUA-301-Final Project-Moodify
 Most music recommendation systems today rely heavily on user history or listening habits, lacking real-time interaction based on users' current mood or context. 
 This project combines real-time emotion detection with music recommendation to create a personalized and context-aware user experience.
-We trained emotion detection models on the FER2013 dataset with finetuned  CNN, VGG16, ResNet and paired them with a music recommendation model based on CNN and RNN-attention architectures.
+We trained emotion detection models on the FER2013 dataset with fine-tuned CNN, VGG16, ResNet and paired them with a music recommendation model based on CNN and RNN-attention architectures.
 The system can predict emotions like angry, sad, happy, surprise, and fear, then recommend 10 songs tailored to the detected emotion.
 
  ## Environment setup
- ### 1.requirements
+ ### 1. requirements
  - Python >= 3.8
  - Install dependencies with pip:
    
  `pip install -r requirements.txt`
 
  
- ### 2.dataset setup
+ ### 2. Dataset setup
  Download the dataset from [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
  
  Another dataset is customed [music_moods_dataset.csv](./music_moods_dataset.csv)
  
 
+## Execution
+### 1. Train Emotion Detection Models
 
- 
+### 2. Predict Emotion and Recommend Songs
+
+### 3. Visualize Results 
+
+#### Expected output
+with taking a selfie like this
+![input_example](./image/input_example)
+ You can get a picture with emotional label and confidence and the 10 songs recomended to you.
+![output_example](./image/output_example)
+
 
 
  ## Results
  
- ### 1.Emotion Detection
- Due to the imbalance among class of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more example of small-class images and assigning larger weights to underrepresented classes during training.
- Among finetuned CNN, ResNet and VGG16, CNN with hypeband parameter search has the best performance and generelization ability.
+ ### 1. Emotion Detection
+ Due to the imbalance among classes of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more examples of small-class images and assigning larger weights to underrepresented classes during training.
+ Among fine-tuned CNN, ResNet and VGG16, CNN with hypeband parameter search have the best performance and generalization ability.
  #### CNN Classification Report
 
 | Class      | Precision | Recall | F1-Score | Support |
@@ -68,9 +79,14 @@ We initially implemented a CNN model for the music-emotion learning task and lat
 | ![ROC_curve_for_RNN_with_attention](./image/ROC_curve_for_RNN_with_attention.png) | ![PR_curve_for_RNN_with_attention](./image/PR_curve_for_RNN_with_attention.png) |
 
 
+
+
  ## Future Work
 
 
  ## Contributors
+ Alexandra Przysucha (ajp9010@nyu.edu)
+ Andrea Cardiel (alc9588@nyu.edu)
+ Yuhong Zhang (yz9134@nyu.edu)
  
  
