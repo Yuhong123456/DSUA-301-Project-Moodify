@@ -125,8 +125,10 @@ emotion classes.
 
  ## Future Work
  Shifting to more updated, higher-resolution datasets with additional dimensions of evaluating nuanced emotions.
+ 
  Find more percise or considerate music - mood mapping criteria.
- Integrating environmental context with emotional states and user historical preferences for music recommendations
+ 
+ Integrating environmental context with emotional states and user historical preferences for music recommendations.
  
 
  ## Contributors
