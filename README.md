@@ -40,6 +40,10 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  ### 1. Emotion Detection
  Due to the imbalance among classes of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more examples of small-class images and assigning larger weights to underrepresented classes during training.
  Among fine-tuned CNN, ResNet and VGG16, CNN with hypeband parameter search have the best performance and generalization ability.
+ Hyperparameter FOor CNN:
+ ![Screenshot 2024-12-15 at 19 14 49](https://github.com/user-attachments/assets/a13509d1-51f7-4611-b595-930708cbc974)
+
+ 
  #### CNN Classification Report
 
 | Class      | Precision | Recall | F1-Score | Support |
