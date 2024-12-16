@@ -23,7 +23,7 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 Try running the [Emotion_Music_Reccommendation.ipynb](./Emotion_Music_Reccommendation.ipynb) file in order.
 
 #### Expected output
-With taking a photo of a face,
+With taking a picture of a face (either input image as seen below or through device's webcam feature,
 
 then you can get a picture with emotional label and confidence and the 10 songs from different decades recomended to you.
  
@@ -38,7 +38,7 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  
  ### 1. Emotion Detection
  Due to the imbalance among classes of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more examples of small-class images and assigning larger weights to underrepresented classes during training.
- Among fine-tuned CNN, ResNet and VGG16, CNN with hypeband parameter search have the best performance and generalization ability.
+ Among fine-tuned CNN and VGG16, CNN with Hyperband parameter search have the best performance and generalization ability.
  
  Hyperparameter For CNN:
  
@@ -74,7 +74,7 @@ performance plateau for the validation set. A likely reason for this is that onl
 layers of the pre-trained VGG-16 model were unfrozen for fine-tuning, which constrained
 its ability to adapt to the FER dataset’s specific characteristics.
 
-#### shifting from FER to FER+ dataset
+#### Shifting from FER to FER+ dataset
 
 ![Screenshot 2024-12-15 at 16 22 53](https://github.com/user-attachments/assets/55c73c32-aa9f-4bb1-a3f4-1af989f52a9b)
 <br>
