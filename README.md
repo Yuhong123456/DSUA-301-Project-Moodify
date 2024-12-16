@@ -20,7 +20,7 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
  
 
 ## Execution
-Try running the [Emotion_Music_Reccomendation.ipynb](./Emotion_Music_Reccomendation.ipynb) file in order.
+Try running the [Emotion_Music_Reccommendation.ipynb](./Emotion_Music_Reccommendation.ipynb) file in order.
 
 #### Expected output
 With taking a photo of a face,
