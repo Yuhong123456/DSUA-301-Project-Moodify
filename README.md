@@ -40,49 +40,37 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  ### 1. Emotion Detection
  Due to the imbalance among classes of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more examples of small-class images and assigning larger weights to underrepresented classes during training.
  Among fine-tuned CNN, ResNet and VGG16, CNN with hypeband parameter search have the best performance and generalization ability.
- Hyperparameter FOor CNN:
+ 
+ Hyperparameter For CNN:
+ 
  ![Screenshot 2024-12-15 at 19 14 49](https://github.com/user-attachments/assets/a13509d1-51f7-4611-b595-930708cbc974)
 
  
- #### CNN Classification Report
+ #### CNN Classification Report with 40 epochs
 
-| Class      | Precision | Recall | F1-Score | Support |
-|------------|-----------|--------|----------|---------|
-| angry      | 0.65      | 0.55   | 0.59     | 958     |
-| surprise   | 0.82      | 0.69   | 0.75     | 831     |
-| sad        | 0.54      | 0.74   | 0.63     | 1247    |
-| happy      | 0.83      | 0.93   | 0.87     | 1774    |
-| fear       | 0.57      | 0.36   | 0.44     | 1024    |
 
-| Metric          | Value |
-|------------------|-------|
-| **Accuracy**     | 0.69  |
-| **Macro Avg**    | Precision: 0.68, Recall: 0.65, F1-Score: 0.66 |
-| **Weighted Avg** | Precision: 0.69, Recall: 0.69, F1-Score: 0.68 |
+<img width="323" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
+<img width="536" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
 
  
- ![confunsion matrix for CNN_Emotion_Model](./image/CNN_confusion_matrix.png)
-
-
-
- 
+ #### VGG-16 Classification Report with 40 epochs
+<img width="312" alt="vgg_classification_report" src="https://github.com/user-attachments/assets/b2f59850-9d5e-4f15-bab2-c367f921f2dc" />
 
 
  ### 2.Music Recommendation
 We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
  ## Report for CNN
+<img width="323" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
 
-| Metric          | Precision | Recall | F1-Score | Support |
-|------------------|-----------|--------|----------|---------|
-| **Accuracy**     |           |        | 0.82     | 8222    |
-| **Macro Avg**    | 0.79      | 0.77   | 0.77     | 8222    |
-| **Weighted Avg** | 0.83      | 0.82   | 0.82     | 8222    |
+<img width="400" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
 
- ![confunsion matrix for CNN_Music_Model](./image/music_model_confusionmatrix.png)
+
+
 
  | ROC_curve_for_RNN_with_attention        | PR_curve_for_RNN_with_attention       |
 |----------------|----------------|
-| ![ROC_curve_for_RNN_with_attention](./image/ROC_curve_for_RNN_with_attention.png) | ![PR_curve_for_RNN_with_attention](./image/PR_curve_for_RNN_with_attention.png) |
+| <img width="502" alt="MUSIC_RNN_ATTENTION_model_roc_curve" src="https://github.com/user-attachments/assets/5f551bd4-1579-477a-8890-d730b469d569" />| <img width="502" alt="MUSIC_RNN_ATTENTION_pr_curve" src="https://github.com/user-attachments/assets/8f7e59ff-1ca9-44ac-9dbc-b6557093640a" /> |
+
 
 
 
