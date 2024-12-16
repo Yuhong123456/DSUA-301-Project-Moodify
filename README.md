@@ -46,9 +46,8 @@ then you can get a picture with emotional label and confidence and the 10 songs 
 
  
  #### CNN Classification Report with 40 epochs
+<img width="400" alt="cnn_model_classification report" src="https://github.com/user-attachments/assets/1c58b7b7-72ad-47e7-ba40-883745501fb3" />
 
-
-<img width="400" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
 <br>
 <img width="400" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
 <br>
