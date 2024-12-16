@@ -20,19 +20,18 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
  
 
 ## Execution
-### 1. Train Emotion Detection Models
-
-### 2. Predict Emotion and Recommend Songs
-
-### 3. Visualize Results 
+Try running the .ipynb file in order.
 
 #### Expected output
-with taking a picture of a face,
+With taking a photo of a face,
 
-then you can get a picture with emotional label and confidence and the 10 songs recomended to you.
+then you can get a picture with emotional label and confidence and the 10 songs from different decades recomended to you.
  
-![output_example](./image/output_example.png)
+<img width="500" alt="pascal_image_emotion_detection_with songs _cnn" src="https://github.com/user-attachments/assets/f4b073e7-d80e-4c2f-b69c-9b55c39bd36d" />
 
+<br>
+
+<img width="900" alt="youtube song recs for webcaem image detection happy" src="https://github.com/user-attachments/assets/ebd0dcf0-0a95-48d1-adf0-6a5876abaae4" />
 
 
  ## Results
@@ -49,27 +48,30 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  #### CNN Classification Report with 40 epochs
 
 
-<img width="323" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
-<img width="536" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
+<img width="350" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
+<br>
+<img width="350" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
 
  
  #### VGG-16 Classification Report with 40 epochs
-<img width="312" alt="vgg_classification_report" src="https://github.com/user-attachments/assets/b2f59850-9d5e-4f15-bab2-c367f921f2dc" />
+<img width="350" alt="vgg_classification_report" src="https://github.com/user-attachments/assets/b2f59850-9d5e-4f15-bab2-c367f921f2dc" />
 
 
  ### 2.Music Recommendation
 We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
- ## Report for CNN
-<img width="323" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
+ ####  CNN Classification Report with 30 epochs
+<img width="350" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
+<br>
+<img width="350" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
 
-<img width="400" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
+ ####  RNN+attnetion Classification Report with 40 epochs
 
+<img width="350" alt="MUSIC_RNN_ATTENTION_classification_report" src="https://github.com/user-attachments/assets/65b923ba-069e-4658-ab87-4144f6a0fddb" />
 
+<br>
+ | ROC_curve_for_RNN_with_attention               |                PR_curve_for_RNN_with_attention       |
 
-
- | ROC_curve_for_RNN_with_attention        | PR_curve_for_RNN_with_attention       |
-|----------------|----------------|
-| <img width="502" alt="MUSIC_RNN_ATTENTION_model_roc_curve" src="https://github.com/user-attachments/assets/5f551bd4-1579-477a-8890-d730b469d569" />| <img width="502" alt="MUSIC_RNN_ATTENTION_pr_curve" src="https://github.com/user-attachments/assets/8f7e59ff-1ca9-44ac-9dbc-b6557093640a" /> |
+| <img width="450" alt="MUSIC_RNN_ATTENTION_model_roc_curve" src="https://github.com/user-attachments/assets/5f551bd4-1579-477a-8890-d730b469d569" />| <img width="450" alt="MUSIC_RNN_ATTENTION_pr_curve" src="https://github.com/user-attachments/assets/8f7e59ff-1ca9-44ac-9dbc-b6557093640a" /> |
 
 
 
@@ -80,7 +82,8 @@ We initially implemented a CNN model for the music-emotion learning task and lat
 
  ## Contributors
  Alexandra Przysucha (ajp9010@nyu.edu)
- Andrea Cardiel (alc9588@nyu.edu)
  Yuhong Zhang (yz9134@nyu.edu)
+ Andrea Cardiel (alc9588@nyu.edu)
+
  
  
