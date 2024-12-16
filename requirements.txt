@@ -1,1 +1,31 @@
 
+# General-purpose libraries
+numpy
+pandas
+matplotlib
+seaborn
+opencv-python
+urllib3
+webbrowser
+pydrive
+oauth2client
+
+# Scikit-learn and imbalanced-learn
+scikit-learn
+imbalanced-learn
+
+# TensorFlow and Keras
+tensorflow
+keras
+tensorflow-addons  
+
+# Keras Tuner
+keras-tuner
+
+# Google Colab specific libraries
+IPython
+google-colab
+pydrive
+
+# Kaggle imports
+kagglehub
