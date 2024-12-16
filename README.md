@@ -74,6 +74,21 @@ performance plateau for the validation set. A likely reason for this is that onl
 layers of the pre-trained VGG-16 model were unfrozen for fine-tuning, which constrained
 its ability to adapt to the FER dataset’s specific characteristics.
 
+#### shifting from FER to FER+ dataset
+
+![Screenshot 2024-12-15 at 16 22 53](https://github.com/user-attachments/assets/55c73c32-aa9f-4bb1-a3f4-1af989f52a9b)
+<br>
+![Screenshot 2024-12-15 at 16 23 21](https://github.com/user-attachments/assets/ea60e422-6e82-4f56-b42a-864d9686eb8d)
+
+On FER+, the accuracy of the CNN model raises around 10% with 30 epochs, the
+VGG-16 model raises around 5% with only 20 epochs. The imbalance of accuracy among
+classes still exists as we are using the same image set, but the accuracy for all classes has
+been improved and the gap between major class and minor class is shortened with the
+multi-labeled annotation.
+Our results demonstrate that, with identical data augmentation, models trained on the
+FER+ dataset achieve significantly better performance. This finding highlights the
+potential of our models when applied to more advanced and higher-quality datasets like
+FER+.
  ### 2.Music Recommendation
 We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
  ####  CNN Classification Report with 30 epochs
