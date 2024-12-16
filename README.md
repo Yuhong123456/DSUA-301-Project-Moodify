@@ -48,15 +48,18 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  #### CNN Classification Report with 40 epochs
 
 
-<img width="350" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
+<img width="400" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/7579baed-77dd-4b0a-a1bf-7bcd55140ee5" />
 <br>
-<img width="350" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
+<img width="400" alt="cnn_confusion_matrix" src="https://github.com/user-attachments/assets/3def7bb8-b330-42a2-a5dc-09430cf9dfdc" />
+<br>
+ <img width="778" alt="cnn_model_accuracy_loss_plots" src="https://github.com/user-attachments/assets/6d9ed940-00d1-4f22-874a-8dcafdcc8047" />
 
- 
  #### VGG-16 Classification Report with 40 epochs
-<img width="350" alt="vgg_classification_report" src="https://github.com/user-attachments/assets/b2f59850-9d5e-4f15-bab2-c367f921f2dc" />
+<img width="400" alt="vgg_classification_report" src="https://github.com/user-attachments/assets/b2f59850-9d5e-4f15-bab2-c367f921f2dc" />
 <br>
-<img width="532" alt="vgg_confusion_matrix" src="https://github.com/user-attachments/assets/cb8b1267-dd74-4981-8696-79b54886e61d" />
+<img width="400" alt="vgg_confusion_matrix" src="https://github.com/user-attachments/assets/cb8b1267-dd74-4981-8696-79b54886e61d" />
+<br>
+<img width="782" alt="vgg_model_accuracy_and_loss_plots" src="https://github.com/user-attachments/assets/18b6807f-1343-4567-b033-d52062d4a0ff" />
 
 The CNN model achieved an accuracy of approximately 66%, while the VGG-16 model
 only reached around 48%. Despite applying class balancing techniques, both models
@@ -74,9 +77,9 @@ its ability to adapt to the FER dataset’s specific characteristics.
  ### 2.Music Recommendation
 We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
  ####  CNN Classification Report with 30 epochs
-<img width="350" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
+<img width="400" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
 <br>
-<img width="350" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
+<img width="400" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
 
 For music model, with 30 epochs the CNN achieved 87% accuracy and but is a noticeable
 gap between training and validation accuracy, indicating that the CNN model tends to
@@ -85,7 +88,7 @@ generalizing well to unseen data.
 
  ####  RNN+attnetion Classification Report with 40 epochs
 
-<img width="350" alt="MUSIC_RNN_ATTENTION_classification_report" src="https://github.com/user-attachments/assets/65b923ba-069e-4658-ab87-4144f6a0fddb" />
+<img width="400" alt="MUSIC_RNN_ATTENTION_classification_report" src="https://github.com/user-attachments/assets/65b923ba-069e-4658-ab87-4144f6a0fddb" />
 
 <br>
  | ROC_curve_for_RNN_with_attention               |                PR_curve_for_RNN_with_attention       |
