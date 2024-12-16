@@ -1,7 +1,7 @@
 # DSUA-301-Final Project-Moodify
 Most music recommendation systems today rely heavily on user history or listening habits, lacking real-time interaction based on users' current mood or context. 
 This project combines real-time emotion detection with music recommendation to create a personalized and context-aware user experience.
-We trained emotion detection models on the FER2013 dataset with fine-tuned CNN, VGG16, ResNet and paired them with a music recommendation model based on CNN and RNN-attention architectures.
+We trained emotion detection models on the FER2013 dataset with fine-tuned CNN and VGG16 and paired them with a music recommendation model based on CNN and RNN-attention architectures.
 The system can predict emotions like angry, sad, happy, surprise, and fear, then recommend 10 songs tailored to the detected emotion.
 
  ## Environment setup
@@ -15,7 +15,7 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
  ### 2. Dataset setup
  Download the dataset from [FER2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
  
- Another dataset is customed [music_moods_dataset.csv](./music_moods_dataset.csv), you can find it in the file and upload it to colab for running
+ Another dataset is customed [music_moods_dataset.csv](./music_moods_dataset.csv), you can find it in the file and upload it to Colab for running
  
  
 
@@ -23,9 +23,9 @@ The system can predict emotions like angry, sad, happy, surprise, and fear, then
 Try running the [Emotion_Music_Reccommendation.ipynb](./Emotion_Music_Reccommendation.ipynb) file in order.
 
 #### Expected output
-With taking a picture of a face (either input image as seen below or through device's webcam feature,
+With taking a picture of a face (either input image as seen below or through the device's webcam feature,
 
-then you can get a picture with emotional label and confidence and the 10 songs from different decades recomended to you.
+then you can get a picture with emotional label and confidence and the 10 songs from different decades recommended to you.
  
 <img width="500" alt="pascal_image_emotion_detection_with songs _cnn" src="https://github.com/user-attachments/assets/f4b073e7-d80e-4c2f-b69c-9b55c39bd36d" />
 
@@ -38,7 +38,7 @@ then you can get a picture with emotional label and confidence and the 10 songs 
  
  ### 1. Emotion Detection
  Due to the imbalance among classes of the FER2013FER2013 dataset, we made data augmentation by using ImageDataGenerator to generate more examples of small-class images and assigning larger weights to underrepresented classes during training.
- Among fine-tuned CNN and VGG16, CNN with Hyperband parameter search have the best performance and generalization ability.
+ Among fine-tuned CNN and VGG16, CNN with Hyperband parameter search has the best performance and generalization ability.
  
  Hyperparameter For CNN:
  
@@ -66,7 +66,7 @@ exhibited better recognition performance for major classes like happy compared t
 10
 classes such as fear. This result highlights the persistent challenge of class imbalance,
 where underrepresented classes are more difficult to learn.
-Both models were trained for 40 epochs,the CNN model demonstrated strong
+Both models were trained for 40 epochs, the CNN model demonstrated strong
 generalization ability. Its training and validation accuracy curves align well, showing a
 steady improvement over epochs. In contrast, the VGG-16 model encountered a
 performance plateau for the validation set. A likely reason for this is that only the final
@@ -81,26 +81,26 @@ its ability to adapt to the FER dataset’s specific characteristics.
 
 On FER+, the accuracy of the CNN model raises around 10% with 30 epochs, the
 VGG-16 model raises around 5% with only 20 epochs. The imbalance of accuracy among
-classes still exists as we are using the same image set, but the accuracy for all classes has
+classes still exist as we are using the same image set, but the accuracy for all classes has
 been improved and the gap between major class and minor class is shortened with the
 multi-labeled annotation.
 Our results demonstrate that, with identical data augmentation, models trained on the
-FER+ dataset achieve significantly better performance. This finding highlights the
+FER+ dataset achieves significantly better performance. This finding highlights the
 potential of our models when applied to more advanced and higher-quality datasets like
 FER+.
  ### 2.Music Recommendation
-We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
+We initially implemented a CNN model for the music-emotion learning task and later enhanced it to an RNN with an attention mechanism. This improvement yielded promising performance, significantly boosting the model's ability to detect smaller categories such as angry, fear, and surprise.
  ####  CNN Classification Report with 30 epochs
 <img width="400" alt="MUSIC_CNN_model_classification_report" src="https://github.com/user-attachments/assets/c976b5b7-131b-405b-b3d0-3020852c0ff8" />
 <br>
 <img width="400" alt="MUSIC_CNN_model_confusion_matrix" src="https://github.com/user-attachments/assets/1fbb904c-d625-4ba6-b569-0b7fba533f04" />
 
-For music model, with 30 epochs the CNN achieved 87% accuracy and but is a noticeable
+For the music model, with 30 epochs, the CNN achieved 87% accuracy. However, there is a noticeable
 gap between training and validation accuracy, indicating that the CNN model tends to
-overfit after the initial epochs.The CNN may rely heavily on training patterns rather than
+overfit after the initial epochs. The CNN may rely heavily on training patterns rather than
 generalizing well to unseen data.
 
- ####  RNN+attnetion Classification Report with 40 epochs
+ ####  RNN+Attention Classification Report with 40 epochs
 
 <img width="400" alt="MUSIC_RNN_ATTENTION_classification_report" src="https://github.com/user-attachments/assets/65b923ba-069e-4658-ab87-4144f6a0fddb" />
 
@@ -125,7 +125,7 @@ emotion classes.
  ## Future Work
  Shifting to more updated, higher-resolution datasets with additional dimensions of evaluating nuanced emotions.
  
- Find more percise or considerate music - mood mapping criteria.
+ Find more precise or considerate music - mood mapping criteria.
  
  Integrating environmental context with emotional states and user historical preferences for music recommendations.
  
