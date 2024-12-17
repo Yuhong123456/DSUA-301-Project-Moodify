@@ -128,7 +128,9 @@ emotion classes.
  Find more precise or considerate music - mood mapping criteria.
  
  Integrating environmental context with emotional states and user historical preferences for music recommendations.
- 
+
+ for trying the fER+ dataset, please download the fer2013.csv from google drive https://drive.google.com/file/d/1MPlSxWvnEZ7LQYCbS8CfN69mRu1Yp2YZ/view?usp=drive_link and download the fer2013new.csv
+
 
  ## Contributors
  Alexandra Przysucha (ajp9010@nyu.edu)
